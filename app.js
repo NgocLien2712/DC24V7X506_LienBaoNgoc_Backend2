@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// 1. ĐƯA ROUTE TRANG CHỦ LÊN TRÊN ĐÂY
+// 1. ROUTE TRANG CHỦ
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to contact book application." });
 });
