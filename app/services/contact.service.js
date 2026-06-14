@@ -52,7 +52,7 @@ class ContactService {
       { $set: update },
       { returnDocument: "after" },
     );
-    return result.value; //return result;
+    return result; //return result;
   }
 
   async delete(id) {
